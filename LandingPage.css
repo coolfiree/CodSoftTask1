@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Lilita One', sans-serif;
+    height: 100%;
+    width: 100;
+    /* background-color: whitesmoke; */
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+
+#ip{
+    background-color: black;
+    border-radius: 50px;
+    border: solid linear-gradient(white,black) saddlebrown 2px ;
+    margin-left:1vw;
+    padding:0.5em;
+}
+
+#ipi{
+    padding-left: 1em;
+    border: solid 1px;
+    background-color: black;
+    height: 2em;
+    border-radius: 50px;
+    border-color: rgb(38, 58, 209);
+    color: white;
+}
+
+header{
+    position: static;
+    display: flex;
+    padding: 2em;
+    padding-right: 0em;
+    background-color: rgba(255, 255, 255, 0.232);
+    text-align: center;
+    justify-content: space-between;
+
+    /* glow */
+    box-shadow: 0px 1px 2px rgba(255, 255, 255, 0.5), 
+              0px 2px 4px rgba(255,255,255,0.5), 
+              0px 4px 8px rgba(0,0,255,0.5), 
+              0px 8px 16px rgba(255,255,255,0.5);
+    /* glow */
+}
+
+.lfthead{
+    display: flex;
+    text-align: center;
+}
+
+.lfthead h1{
+    background-color: rgba(240, 248, 255, 0.132);
+    border-radius: 40px;
+    padding: 0em 0.25em;
+    margin-left: 5vh;
+    /* text-shadow: 2.5px 2.5px 2px rgba(0, 0, 0, 0.38); */
+    text-shadow: 2px 2px 20px rgb(255, 255, 255);
+    /* padding-top: 0.5em; */
+}
+
+.lfthead .srch{
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+    /* margin: 1em 0em 0em 1em; */
+    margin-left: 0.5em;
+}
+
+nav{
+    display: flex;
+}
+
+.elm{
+    padding-top: 0.5em;
+}
+
+.elm a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 2em;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+.m{
+  display: flex;
+}
+/* mid section starts */
+.mid{
+    /* position: fixed;
+    bottom: 0; */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2),limegreen); */
+    /* display: flex; */
+    margin: 12.5vh 5vw;
+    height: 50vh;
+    width: 90vw;
+    color: whitesmoke ;
+    text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.536);
+}
+
+.mid h1{
+    font-family: 'Lilita One', sans-serif;
+    font-weight: 200;
+    font-size: 5em;
+    
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.mid .para{
+  width:90%;
+  margin:10px;
+  text-justify:newspaper;
+  font-size: large;
+  word-spacing: 2px;
+}
+
+.mid button{
+  width: 20vw;
+  height: 6vw;
+  position: absolute;
+  left: 15vw;
+  top: 60vh;
+  transform: translate(-50%,-80%);
+  font-family: 'Lilita One', sans-serif;
+  font-size: 2vw;
+  letter-spacing: 0.1em;
+  color: #e8e8e8;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: linear-gradient(45deg,#d350db,teal,#d350db);
+  background-size: 400% 400%;
+  box-shadow: 0.45vw 0.45vw 0 lightcoral;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    animation: gradient 10s ease infinite;
+    font-size: 2.05vw;
+    box-shadow: 0.2vw 0.2vw 0 rgb(239, 192, 255);
+  }
+}
+
+.mid {
+text-indent: center;
+}
+
+  /* background-color: #ffffff; */
+
+/* mid section ends */
+
+/* footer section starts */
+footer{
+    position: fixed;
+    bottom: 0; 
+    background-color: rgba(165, 165, 165, 0.143);
+    width: 100vw;
+    height: 10vh;
+}
+  
+  /* Style the footer */
+  .footer {
+    background-color: #3333338a;
+    color: #ffffffba;
+    /* padding-top: 9px; */
+    font-size: 14px; 
+  }
+  
+  .footer-container {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    /* flex: 1 1 30%; */
+    margin-bottom: 20px;
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    /* padding-top: 20px; */
+    border-top: 1px solid #555;
+  }
+
+  .social-icons a{
+    color:white;
+    text-decoration: none;
+    font-size: 2em;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .footer-section {
+      flex: 1 1 100%;
+    }
+  }
+
+/* footer */
+
+
+
